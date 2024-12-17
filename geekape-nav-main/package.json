@@ -9,7 +9,7 @@
     "server": "cross-env NODE_ENV=production root=http://localhost:3002/ nuxt",
     "start": "cross-env NODE_ENV=production root=http://localhost:3002/ nuxt",
     "build": "nuxt build",
-    "deploy": "sh ./deploy/index.sh",
+    "deploy": "npm run build && gh-pages -d dist",
     "generate": "nuxt generate"
   },
   "dependencies": {
